@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Learn Javascript </title>
+	<script type="text/javascript">
+		/*
+		  Written by Rutuparn Pawar
+		  Created on 1 April 2020 
+		*/
+		////////////////////////////////////////////////////////////////////////////
+		// Log to console (Use for debugging)
+		console.log("This has been logged");
+
+		////////////////////////////////////////////////////////////////////////////
+		//Variables                     (Preferably use camel case for variable names Ex:- camelCase)
+		var str = "I am ";              // Global variable
+		let name = "Rutuparn Pawar ";   // Local variable
+		const gpa = 9.84;               //Constant variable
+
+		console.log(str+name);
+		//alert(gpa);
+
+		////////////////////////////////////////////////////////////////////////////
+		//Arithmetic operations
+		var a = 5; var b = 2;        //Integers
+		// var a = 6.4; var b= 3.2;     //Decimal or floating point numbers
+
+		console.log('a= '+a);
+		console.log('b= '+b);
+
+		console.log("Addition = "+a+b);          //Addition
+		console.log("Substraction= "+(a-b));     //Substraction
+		console.log("Division= "+(a/b));         //Division
+		console.log("Multiplication= "+(a*b));   //Multiplication
+		console.log("Remainder= "+(a%b));        //Remainder operator
+
+		////////////////////////////////////////////////////////////////////////////
+		//Increment and decrement operator
+		// Pre 
+		console.log('++a ==> '+(++a));
+		console.log('--b ==> '+(--b));
+		// Post
+		a++;
+		b--;
+		console.log('a++ ==> '+(a));
+		console.log('b-- ==> '+(b));
+
+		////////////////////////////////////////////////////////////////////////////
+		//Compound assigment 
+		var c = 10;
+		// var c = 10.10;
+
+		c += 10; console.log('c += 10 ==> '+c);
+		c -= 10; console.log('c -= 10 ==> '+c);
+		c /= 10; console.log('c /= 10 ==> '+c);
+		c *= 10; console.log('c *= 10 ==> '+c);
+
+		////////////////////////////////////////////////////////////////////////////
+		//String and escape characters
+		var text = "Javascript is fun!";
+		var speech = "John said, \"Javascript is fun \" ";
+		//var speech = 'John said, "Javascript is fun"'
+
+		var escChar = 'a \n b \t c \\ d \" e \' f';   // Only a few shown 
+
+		////////////////////////////////////////////////////////////////////////////
+		//String concatenation
+		var str1 = 'My name is ';
+		var str2 = 'Rutuparn Pawar';
+
+		console.log(str1+str2);
+		console.log(str1+'\n'+str2);
+
+		////////////////////////////////////////////////////////////////////////////
+		// Getting char from string using bracket notation
+		var str = 'Javascript';
+		console.log('Length of string str =  '+str.length);
+		console.log('First letter= '+str[0]+'\n'+'Last letter= '+str[str.length-1]);
+
+		//str[4]='S'; This is not allowed since strings are immutable. Instead use the following
+		str = 'JavaScript'; 
+
+		////////////////////////////////////////////////////////////////////////////
+		// Functions
+		//Nothing return
+		function sayHello(name) {
+			console.log('Hello, '+ name);
+		}
+
+		sayHello('Rutuparn');    //Calling the function 'sayHello'
+
+		//Returns something
+		function square(num) {
+			return num * num;
+		}
+
+		console.log('Square of 3 = '+ square(3));  //Calling the function 'square'
+
+		//Multiple parameters with return
+		function sum(a, b) {
+			return a + b;
+		}
+
+		console.log('2 + 2 = '+ sum(2,2));  //Calling the function 'sum'
+
+		////////////////////////////////////////////////////////////////////////////
+		//Arrays (Similar to a Python list)
+		var arr = [10, 20, 30, 40];
+		console.log(arr);
+
+		console.log('First element = '+arr[0]);      // Accessing element using index
+
+		arr[0] = 1000;
+		console.log('Modified array = ' + arr);      // Updating an element in an array
+
+		arr.push(50);
+		console.log('50 added at the end '+ arr);    // Adding an element at the end
+
+		arr.pop();
+		console.log('50 removed from array ' + arr); // Removing element at the end of array
+
+		var list = [10, 'dog', 'cat'];               // Array can store data of various datatypes
+		console.log(list);
+
+		var arrNest = [[1,2,3],[4,5,6],[7,8,9]];     // Nested array ==> Array in a array 
+		console.log(arrNest);
+
+		console.log('1st array\'s 3rd element = ' + arrNest[0][2]);  // Accessing element in nested array
+
+		////////////////////////////////////////////////////////////////////////////
+		//
+		////////////////////////////////////////////////////////////////////////////
+		//
+		////////////////////////////////////////////////////////////////////////////
+		//
+		////////////////////////////////////////////////////////////////////////////
+	</script>
+</head>
+<body>
+	<h1> Learn Javascript </h1>
+</body>
+</html>
