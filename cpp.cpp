@@ -32,9 +32,9 @@ Warning --> They tell us that some aspects of the program may lead to run-time f
 
 1.Change to directory of project files usind cd 
 2.Compile source code using g++ -wall -std=c++14 filename.cpp
-3.Run a.out to run object code
+3.Run ./a.out to run object code
 4.To make a executable using g++ -wall -std=c++14 filename.cpp -o outfilename
-5.Run outfilename
+5.Run ./outfilename
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // Compiling on a webbrowser 

@@ -1,0 +1,44 @@
+//  Source: https://opentdb.com/
+//  The above resource is license under Creative Commons Attribution-ShareAlike 4.0 International License
+
+{
+   "response_code": 0,
+   "results": [  
+      {
+         "category": "Science: Computers",
+         "type": "multiple",
+         "difficulty": "medium",
+         "question": "In programming, the ternary operator is mostly defined with what symbol(s)?",
+         "correct_answer": "?:",
+         "incorrect_answers": [
+            "??",
+            "if then",
+            "?"
+         ]
+      },
+            {
+         "category": "Science: Computers",
+         "type": "multiple",
+         "difficulty": "medium",
+         "question": "How many bytes are in a single Kibibyte?",
+         "correct_answer": "1024",
+         "incorrect_answers": [
+            "2400",
+            "1000",
+            "1240"
+         ]
+      },
+      {
+         "category": "Science: Computers",
+         "type": "multiple",
+         "difficulty": "easy",
+         "question": "In web design, what does CSS stand for?",
+         "correct_answer": "Cascading Style Sheet",
+         "incorrect_answers": [
+            "Counter Strike: Source",
+            "Corrective Style Sheet",
+            "Computer Style Sheet"
+         ]
+      }
+   ]
+}
