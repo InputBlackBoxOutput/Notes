@@ -1,0 +1,102 @@
+/*
+Notes on CSS3
+Notes written by Rutuparn Pawar
+Disclaimer: These notes are only for reference while studing CSS3
+*/
+
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+/* Measurements used during styling 
+   
+   => LENGTH
+   1) in
+   2) cm
+   3) px
+   4) %   (relative to parent)
+   5) em  (also relative to parent)
+   6) rem (relative to root)
+
+   => COLOUR
+	Hexadecimal format => #RRGGBB
+    Each place can hold a value from 0 - F
+
+	Red   => #FF0000
+	Blue  => #00FF00
+	Green => #0000FF
+
+	White => #FFFFFF
+	Gray  => #0F0F0F
+	Black => #000000
+*/
+
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+/* Styling using HTML tags */
+body {
+	font-size: 20px;
+	font-family: Arial,Helvetica;
+	margin: 120%;
+	padding: 120%;
+}
+
+p {
+	float: left;
+	border-color: rgba(127, 127, 127, 0.5); /* Grey 50% Transparency */
+}
+
+div {
+	background-color: rgb(100, 0, 0);
+	position:relative; /* Relative to parent */
+	left: 20px;
+	bottom: 100%;
+}
+/* Styling multiple similar HTML tags */
+h1,h2 {
+	color:#0F0F0F;
+	width:2.5em; 
+	height:1.5em;
+}
+
+/* Styling particular HTML tags using parent-child relation-ship*/
+p > span {
+	font-weight: bold;
+}
+
+nav li {
+	float: top;
+	display: inline;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+/* Styling using id attribute (Used to modify specific element in the HTML file)*/
+/*
+<h6 id="header"> Heading </h6>
+*/
+
+#header {
+	font-weight: bolder;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+/* Styling using class (Used to modify multiple elements in the HTML file)*/
+/*
+<h1 class="text"> Heading </h1>
+<p class="text"> Paragraph </p>
+*/
+
+.text {
+	font-size: 1.5em;
+	font-family: Arial,Helvetica;
+	font-weight: bold;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+/* Change styling depending on state */
+a:visited {
+	color: red;
+}
+
+a:hover {
+	color: green;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+/* EOF */

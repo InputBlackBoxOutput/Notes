@@ -141,10 +141,10 @@ Disclaimer: These notes are only for reference while studing HTML5
 <!-- HTML tags for tables -->
 <table>
 	<thead>
-		<th>
+		<!-- or <th> -->
 			<td> Column 1 heading </td>
 			<td> Column 2 heading </td>
-		</th>
+		<!-- or </th> -->
 	</thead>
 
 	<tbody>
@@ -165,6 +165,50 @@ Disclaimer: These notes are only for reference while studing HTML5
 </table>
 
 <!-- /////////////////////////////////////////////////////////////////////////////// -->
-<!--  -->
+<!-- Forms in HTML -->
+
+<form action="submitHandler.php" method="GET">  <!-- Aternative method = POST (More secure)-->
+	<input type="text" name="text_field">
+	<input type="email" name="email_field">
+	<input type="password" name="passwd_field">
+	<input type="number" name="number_field">
+	<input type="range" name="range_field" min=1 max=10>
+	<input type="date" name="date_field">
+	<input type="time" name="time_field">
+	<input type="colour" name="colour_field">
+
+	<input type="checkbox" name="checkbox" value="ck1"> Checkbox Option1
+	<input type="checkbox" name="checkbox" value="ck2"> Checkbox Option2
+
+	<input type="radio" name="radio" value="rd1"> Radio Option1
+	<input type="radio" name="radio" value="rd2"> Radio Option2
+
+	<textarea>TextArea</textarea>
+
+	<select>
+		<option>Option 1</option>
+		<option>Option 2</option>
+		<option>Option 3</option>
+		<option>Option 4</option>
+	</select>
+
+
+	<input type="submit" value="send">
+</form>
+
+<!-- Useful attributes for input tag : placeholder, autofocus and required -->
+<input type="text" name="name" placeholder="Rutuparn Pawar" autofocus required>
+
+<!-- Organization of form fields-->
+<fieldset>
+	<legend>Personal details</legend>
+
+	<label for="name">Name</label>
+	<input type="text" name="usersName" id="name">
+
+	<label for="age">Age</label>
+	<input type="text" name="usersAge" id="age">
+</fieldset>
 
 <!-- /////////////////////////////////////////////////////////////////////////////// -->
+<!-- EOF -->
