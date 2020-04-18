@@ -1,0 +1,69 @@
+# Deoxygen - Helps in software documentation
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+# Preferred settings 
+
+Expert --> Project  --> JAVADOC_AUTOBRIEF          Checked
+       |            |-> EXTRACT_ALL                Checked
+       |            |-> SHOW_USED_FILES            Unchecked
+       |
+       |-> HTML --> GENERATE_TREEVIEW              Checked
+	        |-> DISABLE_INDEX                  Checked
+
+Wizard --> Scan recursively                        Checked
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+# Structure of comments inside a header file 
+
+1) First structure
+/// This is a brief description.
+/// This is a detailed description 1
+/// This is a detailed description 2  *italics* **bold**  
+/// This is a detailed description 3  className::funcName 
+/// @param a This describes parameter a
+/// @param b This describes parameter b
+/// @see anotherFunc() yetAnotherFunc()
+/// @note This is a note
+/// @attention This is a more important note
+/// @warning This is a warning
+/// @returns Returns something
+
+2) Second structure 
+/** 
+ This is a brief description.
+ This is a detailed description 1
+ This is a detailed description 2  *italics* **bold**  
+ This is a detailed description 3  className::funcName 
+ @param a This describes parameter a
+ @param b This describes parameter b
+ @see anotherFunc() yetAnotherFunc()
+ @note This is a note
+ @attention This is a more important note
+ @warning This is a warning
+ @returns Returns something
+*/
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+# Related to markdown files
+
+@mainpage 
+
+@page <id> <title>
+
+@tableofcontents
+
+@section <id> <title>
+Some information
+
+@subsection <id> <title>
+Some more information
+
+@ref <link>
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+# Running deoxygen using cmd prompt/terminal
+
+1) Change to directory containing doxyfile using 'cd' 
+2) Run 'deoxygen deoxyfile'
+
+/////////////////////////////////////////////////////////////////////////////////////////////
