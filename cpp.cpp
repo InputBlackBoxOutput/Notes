@@ -22,7 +22,7 @@ Warning --> They tell us that some aspects of the program may lead to run-time f
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // Compiling C++ program in windows (Using mingw)
 
-1.Change to directory of project files usind cd 
+1.Change to directory of project files using cd 
 2.Compile source code using g++ -wall -std=c++14 filename.cpp -o outfilename
 3.Run outfilename.exe 
 
@@ -30,7 +30,7 @@ Warning --> They tell us that some aspects of the program may lead to run-time f
 // Compiling C++ program in Linux (Ubuntu)
 // Note: My prefered editor ==> gedit
 
-1.Change to directory of project files usind cd 
+1.Change to directory of project files using cd 
 2.Compile source code using g++ -wall -std=c++14 filename.cpp
 3.Run ./a.out to run object code
 4.To make a executable using g++ -wall -std=c++14 filename.cpp -o outfilename
@@ -109,6 +109,8 @@ std::cin >> variable1 >> variable2;             //Multiple variables
 //Note: cout & cin can be used for file streams
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // Variables and primitive datatypes
+//Note: Better way of initialiing a variable => int i {10};
+
 int i = 10;
 float f = 1.2;
 double d = 20.20;
@@ -150,9 +152,86 @@ std::cout << "Memory size used by char: " << sizeof(char) << " byte/s" << std::e
 std::cout << "Memory size used by bool: " << sizeof(bool) << " byte/s" << std::endl;
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
+// Arrays
+// Creating an array
+int arr1[10];                       // Integer array of size 10
+char c[]  {'A','B','C','D','E';     // Character array containg first five alphabets
+int arr2[10] {0};                   // Integer array of size 10 initialized with 0's
 
+// Accessing and modifying elements in an array
+arr1[0]=10;                  // Modifying the first element to 10
+arr1[3]=5;                   // Modifying the fourth element to 5
+
+cout << arr1[0] << endl;     // Accessing the first element
+
+// Creating a multi-dimensional array
+int arr1[3][2] { {1,2},
+                 {3,4},
+                 {5,6} };                       // Integer array of size 3x2
+
+// Accessing and modifying elements in an multi-dimension array
+arr1[0][0] = 10;                  
+arr1[3][1] = 5;                   
+
+cout << arr1[0][0] << endl;     
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// Strings
+
+//-----------------------------------------------------------------------------------------------
+// Useful character related functions
+#include<cctype>
+isaplha(ch);  isapnum(ch); isdigit(ch);
+isupper(ch);  islower(ch);
+
+tolower(ch); toupper(ch);
+
+//-----------------------------------------------------------------------------------------------
+// C style strings (\0 (null) terminated strings)
+char name[] {"Rutuparn Pawar"};
+
+char fstName[8];
+fstName = "Rutuparn"            // This will not work, instead use strcpy(fstName, "Rutuparn");
+
+cin >> fstName;                 // If getting string without spaces from user
+cin.getline(str, maxlen);       // If getting string with spaces from user
+
+// Note the above functions can be found in #include<cstrings>
+strcpy(fstName, "Rutuparn");   
+strcat(fstName," Pawar");
+cout << strlen(fstName);
+strcmp('Hello', 'hello');
+
+//-----------------------------------------------------------------------------------------------
+// C++ strings
+#include<string>
+std::string
+
+string s1;                  // Empty
+string s2 {"Rutuparn"};     // "Rutuparn"
+string s3 {s2};             // "Rutuparn"
+string s2 {s2, 3};          // "Rut"
+string s2 {s2, 0, 2};       // "Ru"
+
+string cool;
+cool = "C++ rocks";
+
+exclaimed1 = cool + "!";
+exclaimed2 += "!";
+
+sentence = "A" + "B";      // Will not work!
+
+cool[0] = 'L';             //Modifying
+cool.at(0);                //Accessing
+
+// Usefull functions
+cool.substr(0,4);
+cool.find("rocks");
+cout << cool.length();
+
+getline(cin, inputStr);  // Get a complete line 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
-
+// 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
+// 
