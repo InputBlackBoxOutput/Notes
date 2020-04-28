@@ -74,7 +74,7 @@ int main() {
 #endif
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
-// Comments
+// Comments (Short notes for yourself or the programmer next in line)
 
 // This is a single line comment
 
@@ -155,7 +155,7 @@ std::cout << "Memory size used by bool: " << sizeof(bool) << " byte/s" << std::e
 // Arrays
 // Creating an array
 int arr1[10];                       // Integer array of size 10
-char c[]  {'A','B','C','D','E';     // Character array containg first five alphabets
+char c[]  {'A','B','C','D','E'};    // Character array containg first five alphabets
 int arr2[10] {0};                   // Integer array of size 10 initialized with 0's
 
 // Accessing and modifying elements in an array
@@ -190,7 +190,7 @@ tolower(ch); toupper(ch);
 char name[] {"Rutuparn Pawar"};
 
 char fstName[8];
-fstName = "Rutuparn"            // This will not work, instead use strcpy(fstName, "Rutuparn");
+fstName = "Rutuparn";           // This will not work, instead use strcpy(fstName, "Rutuparn");
 
 cin >> fstName;                 // If getting string without spaces from user
 cin.getline(str, maxlen);       // If getting string with spaces from user
@@ -204,16 +204,18 @@ strcmp('Hello', 'hello');
 //-----------------------------------------------------------------------------------------------
 // C++ strings
 #include<string>
-std::string
+//std::string
+string cool;
+cool = "C++ rocks";
 
 string s1;                  // Empty
 string s2 {"Rutuparn"};     // "Rutuparn"
 string s3 {s2};             // "Rutuparn"
-string s2 {s2, 3};          // "Rut"
-string s2 {s2, 0, 2};       // "Ru"
+string s4 {s2, 3};          // "Rut"
+string s5 {s2, 0, 2};       // "Ru"
+string s6(3,'X');           // "XXX"
 
-string cool;
-cool = "C++ rocks";
+
 
 exclaimed1 = cool + "!";
 exclaimed2 += "!";
@@ -221,17 +223,92 @@ exclaimed2 += "!";
 sentence = "A" + "B";      // Will not work!
 
 cool[0] = 'L';             //Modifying
-cool.at(0);                //Accessing
+char ch1 = cool.at(0);     //Accessing Method 1
+char ch2 = cool[0];        //Accessing Method 2
 
 // Usefull functions
 cool.substr(0,4);
 cool.find("rocks");
+cool.erase(0,3);
 cout << cool.length();
 
 getline(cin, inputStr);  // Get a complete line 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
+// Functions (Provides abstraction)
+// See C++ standard library
+
+// Function with only parameters
+void greetUser(string name) {
+	cout << "Hello " + name << endl;
+}
+
+// Function with only return
+int generateRandomNumber() {
+	return rand()%7;          // Returns random number from 0 to 6
+}
+
+// Function with return and default parameter
+// Pass by value
+int greaterNum(int num1, int num2=0) {
+	if(num1 > num2)
+		return num1;
+	else
+		return num2;
+}
+
+// Pass by reference
+void addNumbers(int &a, int &b) {
+	a+b;
+}
+
+// Arrays are passed by reference
+int sumOfElements(const int num[], size_t len) {
+	int sum {0};
+	for(size_t i=0; i<len; i++)
+		sum += num[i];
+	return sum;
+}
+
+
+// Calling a function
+void areaCircle(void);  // Function prototype (Default value is defined here!)
+
+int main() {
+	areaCircle();       // Calling the function (Pass by value)
+	return 0;
+}
+
+void areaCircle() {
+	double r {};
+	cout << "Enter radius of circle:";
+	cin >> r;
+	cout << "Area of circle:" << 3.142*r*r << endl;
+}
+
+// Function overloading (Parameters having different datatypes!)
+// Be careful when dealing with default values and function overloading
+
+int addNum(int a, int b);
+double addNum(double a, double b);
+
+int main() {
+	cout << addNum(1,2) << endl;
+	cout << addNum(10.12, 12.5) << endl;
+	return 0;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
 // 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // 
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// 
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// 
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
