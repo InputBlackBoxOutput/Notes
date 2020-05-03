@@ -388,7 +388,7 @@ export { capitalizeString };
 // Exporting variables
 export const foo = "bar";
 
-// Export default
+// Export default (To export anonymous function)
 export default function foo(name) {
 	console.log("Hello " + name);
 }

@@ -4,11 +4,9 @@
 # Preferred settings 
 
 Expert --> Project  --> JAVADOC_AUTOBRIEF          Checked
-       |            |-> EXTRACT_ALL                Checked
-       |            |-> SHOW_USED_FILES            Unchecked
        |
        |-> HTML --> GENERATE_TREEVIEW              Checked
-	        |-> DISABLE_INDEX                  Checked
+	            |-> DISABLE_INDEX                  Checked
 
 Wizard --> Scan recursively                        Checked
 
