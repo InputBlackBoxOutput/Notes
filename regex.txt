@@ -2,7 +2,7 @@
 # Regular expressions are used for matching string patterns 
 
 # Use cases:
-1) gedit <regex> <filename>
+1) grep <regex> <filename>
 2) javascriptString.match(regex) or javascriptString.test(regex)
 Note: Some editors such as 'Sublime Text' use regex for finding text patterns in a filename
 
