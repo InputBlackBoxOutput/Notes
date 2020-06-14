@@ -6,7 +6,7 @@
 Expert --> Project  --> JAVADOC_AUTOBRIEF          Checked
        |
        |-> HTML --> GENERATE_TREEVIEW              Checked
-	            |-> DISABLE_INDEX                  Checked
+	        |-> DISABLE_INDEX                  Checked
 
 Wizard --> Scan recursively                        Checked
 

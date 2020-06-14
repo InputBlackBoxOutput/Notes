@@ -9,7 +9,7 @@ Disclaimer: These notes are only for reference while learning the C++ programmin
 C++ program files have an extension => .cpp while header files have an extension .h
 'main' function is the entrypoint of all c and c++ programs 
 
-Errors --> Compiler-time error => 1) syantax error  (Missing semi-colon )
+Errors --> Compiler-time error => 1) syntax error   (Missing semi-colon )
 						       	  2) semantic error (Adding "ab" with 5!)
 		   Linker error => Error occured while linking object codes and libs
 
@@ -42,6 +42,16 @@ Warning --> They tell us that some aspects of the program may lead to run-time f
 2.Write your code and then press Run
 
 */
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// Comments (To makes notes for yourself and others)
+
+// Single line comment
+
+/*  
+*   This is a multi- 
+*   line comment
+*/
+
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // Most simplest C++ program (This program does nothing!)
 #include <iostream>
@@ -180,7 +190,7 @@ cout << arr1[0][0] << endl;
 //-----------------------------------------------------------------------------------------------
 // Useful character related functions
 #include<cctype>
-isaplha(ch);  isapnum(ch); isdigit(ch);
+isalpha(ch);  isapnum(ch); isdigit(ch);
 isupper(ch);  islower(ch);
 
 tolower(ch); toupper(ch);
@@ -262,6 +272,11 @@ void addNumbers(int &a, int &b) {
 	a+b;
 }
 
+void printVector(const std::vector<int> &vect) {
+	for(int i=0; i<vect.size(); i++)
+		cout << vect[i] << " ";
+}
+
 // Arrays are passed by reference
 int sumOfElements(const int num[], size_t len) {
 	int sum {0};
@@ -299,7 +314,7 @@ int main() {
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
-// 
+//
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // 

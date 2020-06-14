@@ -230,5 +230,11 @@ test = reduce(lambda x,y:x+y, test)   # Returns sum of list elements
 set(test)
  
 #---------------------------------------------------------------------------------------------------
+# ASCII table related 
 
+# Character ==> Decimal 
+ord('A') # 65
+# Decimal ==> Character
+chr(90)  # Z
 
+#---------------------------------------------------------------------------------------------------
