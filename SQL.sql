@@ -9,13 +9,13 @@ Disclaimer: These notes are only for reference while learning the SQL
 General information
 
 # Schematic view of a SQL database
-					   ______________________
+		       ______________________
  ________             | Relational DBMS      |
 |        | ---------> |     _____________    |
 | System |    SQL     |    |             |   |
 |________| <--------- |    |   Database  |   |
-					  |    |_____________|   |       
-					  |______________________|           
+                      |    |_____________|   |       
+		      |______________________|           
 
 # Database: Collection of related information/data. 
 
